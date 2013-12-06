@@ -1,0 +1,10 @@
+.tweets {
+  padding: 0px;
+  margin: 0px;
+}
+.bx-viewport{
+  height:400px !important;
+}
+#contents {
+  margin-top: 30px;
+}
