@@ -36,7 +36,8 @@ function BestTweetSlideshowViewModel(){
       slideWidth: 500,
       onSlideBefore: function($slideElement, oldIndex, newIndex){ 
         var screenName = self.tweets()[newIndex].screenName;
-        var bgUrl = 'http://gadgtwit.appspot.com/twbg/' + screenName; 
+        //var bgUrl = 'http://gadgtwit.appspot.com/twbg/' + screenName; 
+        var bgUrl = './bk_images/' + screenName;
         $('body').css('background-image', 'url(' + bgUrl + ')');
       }
     });
