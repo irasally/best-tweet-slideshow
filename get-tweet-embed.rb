@@ -10,7 +10,7 @@ File.open('data/statusIds').each_line {|line|
   res = JSON.parse(open(url).read)
   data = res["html"]
   screenName = res["author_url"].scan(/.*\/twitter.com\/(\w+)/)[0][0]
-  embed = { :id => id.strip, :sreenName => screenName, :embedData => data}.to_json
+  embed = { :id => id.strip, :screenName => screenName, :embedData => data}.to_json
   if idx == 0
     File.open('data/tweetData.json', 'a').puts(embed)
   else
