@@ -37,7 +37,7 @@ function BestTweetSlideshowViewModel(){
       onSlideBefore: function($slideElement, oldIndex, newIndex){ 
         var screenName = self.tweets()[newIndex].screenName;
         //var bgUrl = 'http://gadgtwit.appspot.com/twbg/' + screenName; 
-        var bgUrl = './bk_images/' + screenName;
+        var bgUrl = './bg_images/' + screenName;
         $('body').fadeOut(700, function(){
           $('body').css('background-image', 'url(' + bgUrl + ')').fadeIn(700);
         });
