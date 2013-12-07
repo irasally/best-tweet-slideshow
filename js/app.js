@@ -28,7 +28,7 @@ function BestTweetSlideshowViewModel(){
   self.startSlideShow = function(){
     $('.tweets').bxSlider({
       mode: 'fade',
-      speed: 800,
+      speed: 2000,
       auto: true,
       autoControls: true,
       ticker: true,
@@ -38,7 +38,9 @@ function BestTweetSlideshowViewModel(){
         var screenName = self.tweets()[newIndex].screenName;
         //var bgUrl = 'http://gadgtwit.appspot.com/twbg/' + screenName; 
         var bgUrl = './bk_images/' + screenName;
-        $('body').css('background-image', 'url(' + bgUrl + ')');
+        $('body').fadeOut(700, function(){
+          $('body').css('background-image', 'url(' + bgUrl + ')').fadeIn(700);
+        });
       }
     });
   };
