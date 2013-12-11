@@ -28,7 +28,7 @@ function BestTweetSlideshowViewModel(){
   self.startSlideShow = function(){
     $('.tweets').bxSlider({
       mode: 'fade',
-      speed: 2000,
+      speed: 4000,
       auto: true,
       autoControls: true,
       ticker: true,
